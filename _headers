@@ -1,0 +1,24 @@
+# ==============================================================================
+# Cloudflare Pages / Workers Cache & Performance Headers
+# ==============================================================================
+
+# Long-term immutable caching for static assets
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+# Standard caching with background revalidation for stylesheet and scripts
+/*.css
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+/*.js
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+# HTML pages - revalidate immediately so content edits appear instantly
+/
+  Cache-Control: public, max-age=0, must-revalidate
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+/specialisations/*
+  Cache-Control: public, max-age=0, must-revalidate
+/locations/*
+  Cache-Control: public, max-age=0, must-revalidate

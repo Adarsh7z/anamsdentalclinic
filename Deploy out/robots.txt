@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dr-anams-dental-clinic.anamadarshreddy.workers.dev/sitemap.xml
