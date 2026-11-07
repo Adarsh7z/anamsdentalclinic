@@ -3821,6 +3821,55 @@ body.landing-page .hero-ctas .hero-secondary-btn:hover {
   transform: translateY(-2px);
 }
 
+/* ==============================================================================
+   HERO CALL-NOW / FAQ MOBILE-DESKTOP BUTTON SWAP
+   Scope: Landing page only
+   Desktop/Tablet (>= 768px): FAQ button visible, Call Now button hidden
+   Mobile (<= 767px): Call Now button visible, FAQ button hidden
+   ============================================================================== */
+
+/* Default (Desktop & Tablet >= 768px): Hide mobile Call Now button */
+body.landing-page .hero-call-mobile {
+  display: none !important;
+}
+
+body.landing-page .hero-call-mobile .hero-call-icon {
+  width: 1em;
+  height: 1em;
+  display: block;
+  flex-shrink: 0;
+  vertical-align: 0;
+}
+
+body.landing-page .hero-ctas .btn:focus-visible,
+body.landing-page .hero-ctas .btn:focus {
+  outline: 2px solid var(--ivory, #F3EFEC);
+  outline-offset: 3px;
+}
+
+body.landing-page .hero-ctas .btn-gold:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+@media (hover: none) {
+  body.landing-page .hero-ctas .btn-gold:hover {
+    transform: none;
+    background: var(--bronze);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  }
+}
+
+/* Mobile Viewports (<= 767px): Swap FAQ button with Call Now button */
+@media (max-width: 767px) {
+  body.landing-page .hero-ctas a[href="faq.html"] {
+    display: none !important;
+  }
+  body.landing-page .hero-ctas .hero-call-mobile {
+    display: inline-flex !important;
+  }
+}
+
 /* -------------------- 3. SERVICES / SPECIALISATIONS SECTION -------------------- */
 body.landing-page .services-section {
   background: var(--ivory);
