@@ -1631,6 +1631,31 @@ body {
   line-height: 1.65;
 }
 
+.contact-card a.btn.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0;
+}
+
+.contact-card a.btn.btn-gold:hover,
+.contact-card a.btn.btn-gold:focus,
+.contact-card a.btn.btn-gold:active {
+  justify-content: center;
+  text-align: center;
+  gap: 0;
+}
+
+.contact-card a.btn.btn-gold iconify-icon,
+.contact-card a.btn.btn-gold svg,
+.contact-card a.btn.btn-gold img,
+.contact-card a.btn.btn-gold::before,
+.contact-card a.btn.btn-gold::after {
+  display: none !important;
+  content: none !important;
+}
+
 .map-wrapper {
   border-radius: 24px;
   overflow: hidden;
@@ -2291,21 +2316,21 @@ body {
   }
 
   .floating-location-btn {
-    width: 66px;
-    height: 66px;
-    min-width: 66px;
-    min-height: 66px;
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+    min-height: 58px;
     padding: 0;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #FFFFFF !important;
-    border: 1px solid rgba(46, 42, 39, 0.12) !important;
-    box-shadow: 0 10px 25px rgba(46, 42, 39, 0.14) !important;
+    background: var(--ivory) !important;
+    border: 1px solid var(--ivory-line) !important;
+    box-shadow: 0 10px 25px rgba(46, 42, 39, 0.08) !important;
     text-decoration: none;
-    animation: none !important;
-    -webkit-animation: none !important;
+    animation: floatLocationPulse 3.5s infinite !important;
+    -webkit-animation: floatLocationPulse 3.5s infinite !important;
   }
 
   .floating-location-btn .location-btn-text,
@@ -2315,12 +2340,12 @@ body {
   }
 
   .location-pin-img {
-    width: 52px !important;
-    height: 52px !important;
+    width: 44px !important;
+    height: 44px !important;
     border-radius: 50% !important;
-    background: transparent !important;
-    padding: 0 !important;
-    box-shadow: none !important;
+    background: var(--bg-elevated) !important;
+    padding: 4px !important;
+    box-shadow: 0 2px 6px rgba(32, 28, 23, 0.08) !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -2328,8 +2353,8 @@ body {
   }
 
   .location-pin-img img {
-    width: 48px !important;
-    height: 48px !important;
+    width: 100% !important;
+    height: 100% !important;
     object-fit: contain !important;
     display: block !important;
   }
@@ -3657,6 +3682,7 @@ body.landing-page .menu-overlay-cta a {
 }
 
 /* Smooth anchor scrolling offsets for sticky headers */
+#doctor-profile,
 #about,
 #leadership,
 #why,
@@ -3664,6 +3690,14 @@ body.landing-page .menu-overlay-cta a {
 #experience,
 #contact {
   scroll-margin-top: 100px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing-menu-overlay .menu-acc-chevron,
+  .landing-menu-overlay .menu-overlay-acc-panel,
+  .landing-menu-overlay .menu-overlay-acc-inner {
+    transition: none !important;
+  }
 }
 
 /* -------------------- 2. HERO SECTION -------------------- */
@@ -4146,7 +4180,8 @@ body.landing-page .contact-card {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-    gap: 0.5rem !important;
+    text-align: center !important;
+    gap: 0 !important;
     box-sizing: border-box !important;
   }
 

@@ -503,43 +503,51 @@ document.addEventListener('DOMContentLoaded', () => {
     const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches && !window.location.hostname.includes('localhost');
 
     if (!isReducedMotion) {
-      // 1. Hero image subtle cinematic settling (scale 1.06 to 1 over 2s)
-      const heroImg = document.querySelector('.hero-bg-img');
-      if (heroImg) {
-        gsap.fromTo(heroImg, { scale: 1.06 }, { scale: 1, duration: 2, ease: 'power2.out' });
-      }
+      const runHeroEntrance = () => {
+        // 1. Hero image subtle cinematic settling (scale 1.06 to 1 over 2s)
+        const heroImg = document.querySelector('.hero-bg-img');
+        if (heroImg) {
+          gsap.fromTo(heroImg, { scale: 1.06 }, { scale: 1, duration: 2, ease: 'power2.out' });
+        }
 
-      // 2. Navigation fades down 20px over 0.8s
-      const navbar = document.querySelector('.landing-navbar');
-      if (navbar) {
-        gsap.from(navbar, { y: -20, opacity: 0, duration: 0.8, ease: 'power2.out' });
-      }
+        // 2. Navigation fades down 20px over 0.8s
+        const navbar = document.querySelector('.landing-navbar');
+        if (navbar) {
+          gsap.from(navbar, { y: -20, opacity: 0, duration: 0.8, ease: 'power2.out' });
+        }
 
-      // 3. Headline reveals line by line (translateY 40px and opacity 0 to final, .9s, power3.out, .12s stagger)
-      const heroLines = document.querySelectorAll('.hero-line');
-      if (heroLines.length) {
-        gsap.from(heroLines, {
-          y: 40,
-          opacity: 0,
-          duration: 0.9,
-          ease: 'power3.out',
-          stagger: 0.12,
-          delay: 0.15
-        });
-      }
+        // 3. Headline reveals line by line (translateY 40px and opacity 0 to final, .9s, power3.out, .12s stagger)
+        const heroLines = document.querySelectorAll('.hero-line');
+        if (heroLines.length) {
+          gsap.from(heroLines, {
+            y: 40,
+            opacity: 0,
+            duration: 0.9,
+            ease: 'power3.out',
+            stagger: 0.12,
+            delay: 0.15
+          });
+        }
 
-      // 4. Subtext and existing CTA buttons fade up in sequence
-      const heroSub = document.querySelector('.landing-hero-content .hero-subtitle');
-      const heroCtas = document.querySelector('.landing-hero-content .hero-ctas');
-      if (heroSub && heroCtas) {
-        gsap.from([heroSub, heroCtas], {
-          y: 25,
-          opacity: 0,
-          duration: 0.8,
-          ease: 'power2.out',
-          stagger: 0.15,
-          delay: 0.45
-        });
+        // 4. Subtext and existing CTA buttons fade up in sequence
+        const heroSub = document.querySelector('.landing-hero-content .hero-subtitle');
+        const heroCtas = document.querySelector('.landing-hero-content .hero-ctas');
+        if (heroSub && heroCtas) {
+          gsap.from([heroSub, heroCtas], {
+            y: 25,
+            opacity: 0,
+            duration: 0.8,
+            ease: 'power2.out',
+            stagger: 0.15,
+            delay: 0.45
+          });
+        }
+      };
+
+      if (window.__welcomeCurtainActive) {
+        window.addEventListener('welcome:opening', runHeroEntrance, { once: true });
+      } else {
+        runHeroEntrance();
       }
     }
 
