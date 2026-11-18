@@ -1,19 +1,9 @@
 # ==============================================================================
-# Cloudflare Pages / Workers Cache & Performance Headers
+# Cloudflare Pages / Workers Performance & Cache Directives
+# Dr. Chandra Sekar Anam Dental Suite
 # ==============================================================================
 
-# Long-term immutable caching for static assets
-/assets/*
-  Cache-Control: public, max-age=31536000, immutable
-  Access-Control-Allow-Origin: *
-
-# Standard caching with background revalidation for stylesheet and scripts
-/*.css
-  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
-/*.js
-  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
-
-# HTML pages - revalidate immediately so content edits appear instantly
+# HTML Documents: Revalidate immediately so new deployments show instantly
 /
   Cache-Control: public, max-age=0, must-revalidate
 /*.html
@@ -22,3 +12,20 @@
   Cache-Control: public, max-age=0, must-revalidate
 /locations/*
   Cache-Control: public, max-age=0, must-revalidate
+
+# Stylesheets & Scripts: Immediate revalidation (busts any CDN cache)
+/*.css
+  Cache-Control: public, max-age=0, must-revalidate
+/*.js
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Images & Static Assets
+/assets/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=86400
+  Access-Control-Allow-Origin: *
+
+# Robots & Sitemap
+/robots.txt
+  Cache-Control: public, max-age=86400
+/sitemap.xml
+  Cache-Control: public, max-age=86400
