@@ -3,10 +3,11 @@
 
   // Config & Timings (tuneable)
   const WELCOME_ENABLED = true;
+  const INCLUDE_DR = false; // When false: "ANAM’S DENTAL CLINIC"; when true: "DR. ANAM’S DENTAL CLINIC"
   const SKIP_FOR_SEARCH_REFERRALS = false;
   const TIME_TEXT_ENTER = 0.40;
-  const TIME_TEXT_STAGGER = 0.08;
-  const TIME_HOLD_START = 0.56;
+  const TIME_TEXT_STAGGER = 0.07;
+  const TIME_HOLD_START = 0.61;
   const TIME_TEXT_EXIT = 0.25;
   const TIME_EXIT_STAGGER = 0.03;
   const TIME_EXIT_START = 1.05;
@@ -46,13 +47,17 @@
     '.welcome-shade-r{left:0;background:linear-gradient(to right,rgba(0,0,0,.12),transparent)}' +
     '#welcome-text{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:2;pointer-events:none;text-align:center;padding:env(safe-area-inset-top,24px) 24px env(safe-area-inset-bottom,24px);box-sizing:border-box}' +
     '.welcome-mask{overflow:hidden;display:block;padding:8px 16px;margin:-8px -16px}' +
+    '.welcome-icon-mask{padding:4px 16px;margin:-4px -16px}' +
     '.welcome-line{display:block;line-height:1.08;transform:translate3d(0,120%,0);opacity:0;will-change:transform,opacity}' +
-    '.welcome-eyebrow{font-family:"DM Sans",sans-serif;font-weight:300;font-size:clamp(.95rem,3.8vw,1.15rem);letter-spacing:.12em;color:rgba(243,239,236,.72);margin-bottom:.5rem}' +
-    '.welcome-name{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;letter-spacing:-.01em;text-transform:uppercase;color:#FFF;font-size:clamp(2.1rem,9.8vw,3.1rem);line-height:1.05}';
+    '.welcome-tooth-icon{width:clamp(42px,12vw,52px);height:clamp(48px,14vw,60px);display:block;margin:0 auto clamp(.85rem,2.2vh,1.35rem);filter:drop-shadow(0 2px 10px rgba(0,0,0,.45))}' +
+    '.welcome-eyebrow{font-family:"DM Sans",sans-serif;font-weight:300;font-size:clamp(.95rem,3.8vw,1.15rem);letter-spacing:.12em;color:rgba(243,239,236,.72);margin-bottom:.45rem}' +
+    '.welcome-name{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;letter-spacing:-.01em;text-transform:uppercase;color:#FFF;font-size:clamp(1.85rem,8.2vw,2.85rem);line-height:1.08}';
 
   const styleEl = document.createElement('style');
   styleEl.id = 'welcome-styles';
   styleEl.textContent = css;
+
+  const brandName = INCLUDE_DR ? 'Dr. Anam\u2019s' : 'Anam\u2019s';
 
   const overlay = document.createElement('div');
   overlay.id = 'welcome-splash';
@@ -60,9 +65,17 @@
   overlay.innerHTML = '<div id="welcome-panel-left" class="welcome-panel"><div class="welcome-shade-l"></div></div>' +
     '<div id="welcome-panel-right" class="welcome-panel"><div class="welcome-shade-r"></div></div>' +
     '<div id="welcome-text">' +
+      '<div class="welcome-mask welcome-icon-mask">' +
+        '<div class="welcome-line">' +
+          '<svg class="welcome-tooth-icon" viewBox="0 0 38 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
+            '<path d="M19 5.5C14.5 3 7.5 5 7.5 13C7.5 19.5 9.5 25 11.5 31C13 35.5 15.5 38.5 17 38.5C18.5 38.5 18 31 19 28C20 31 19.5 38.5 21 38.5C22.5 38.5 25 35.5 26.5 31C28.5 25 30.5 19.5 30.5 13C30.5 5 23.5 3 19 5.5Z" stroke="#F3EFEC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>' +
+            '<path d="M13 14C15 16 17 16.8 19 16.8C21 16.8 23 16 25 14" stroke="#F3EFEC" stroke-width="1.3" stroke-linecap="round"/>' +
+          '</svg>' +
+        '</div>' +
+      '</div>' +
       '<div class="welcome-mask"><span class="welcome-line welcome-eyebrow">Welcome to</span></div>' +
-      '<div class="welcome-mask"><span class="welcome-line welcome-name">Dr. Anam\u2019s</span></div>' +
-      '<div class="welcome-mask"><span class="welcome-line welcome-name">Dental</span></div>' +
+      '<div class="welcome-mask"><span class="welcome-line welcome-name">' + brandName + '</span></div>' +
+      '<div class="welcome-mask"><span class="welcome-line welcome-name">Dental Clinic</span></div>' +
     '</div>';
 
   const root = document.documentElement;
@@ -164,7 +177,7 @@
   function runFallback(lines, pLeft, pRight, shades) {
     try {
       const anim = (el, kf, opt) => el.animate(kf, Object.assign({ fill: 'forwards' }, opt));
-      lines.forEach((l, i) => anim(l, [{ transform: 'translate3d(0,120%,0)', opacity: 0 }, { transform: 'translate3d(0,0,0)', opacity: 1 }], { duration: 400, delay: i * 80, easing: 'cubic-bezier(.215,.61,.355,1)' }));
+      lines.forEach((l, i) => anim(l, [{ transform: 'translate3d(0,120%,0)', opacity: 0 }, { transform: 'translate3d(0,0,0)', opacity: 1 }], { duration: 400, delay: i * 70, easing: 'cubic-bezier(.215,.61,.355,1)' }));
       setTimeout(() => {
         lines.forEach((l, i) => anim(l, [{ transform: 'translate3d(0,0,0)', opacity: 1 }, { transform: 'translate3d(0,-120%,0)', opacity: 0 }], { duration: 250, delay: i * 30, easing: 'cubic-bezier(.55,.055,.675,.19)' }));
       }, 1050);
