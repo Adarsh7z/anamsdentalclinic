@@ -1,63 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://dr-anams-dental-clinic.anamadarshreddy.workers.dev/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <loc>https://anamsdentalclinic.pages.dev/</loc>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://dr-anams-dental-clinic.anamadarshreddy.workers.dev/about.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dr-anams-dental-clinic.anamadarshreddy.workers.dev/specialisations.html</loc>
-    <lastmod>2026-09-15</lastmod>
+    <loc>https://anamsdentalclinic.pages.dev/treatments</loc>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://dr-anams-dental-clinic.anamadarshreddy.workers.dev/specialisations/dental-implants.html</loc>
-    <lastmod>2026-09-15</lastmod>
+    <loc>https://anamsdentalclinic.pages.dev/treatments/general-dentistry</loc>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dr-anams-dental-clinic.anamadarshreddy.workers.dev/specialisations/prosthodontics.html</loc>
-    <lastmod>2026-09-15</lastmod>
+    <loc>https://anamsdentalclinic.pages.dev/treatments/root-canal-treatment</loc>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dr-anams-dental-clinic.anamadarshreddy.workers.dev/specialisations/advanced-restorative-dentistry.html</loc>
-    <lastmod>2026-09-15</lastmod>
+    <loc>https://anamsdentalclinic.pages.dev/treatments/tooth-extraction-wisdom-teeth</loc>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dr-anams-dental-clinic.anamadarshreddy.workers.dev/specialisations/crowns-and-bridges.html</loc>
-    <lastmod>2026-09-15</lastmod>
+    <loc>https://anamsdentalclinic.pages.dev/treatments/braces-and-aligners</loc>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dr-anams-dental-clinic.anamadarshreddy.workers.dev/specialisations/full-mouth-rehabilitation.html</loc>
-    <lastmod>2026-09-15</lastmod>
+    <loc>https://anamsdentalclinic.pages.dev/treatments/kids-dentistry</loc>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dr-anams-dental-clinic.anamadarshreddy.workers.dev/locations/kompally.html</loc>
-    <lastmod>2026-09-15</lastmod>
+    <loc>https://anamsdentalclinic.pages.dev/treatments/gum-treatment</loc>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dr-anams-dental-clinic.anamadarshreddy.workers.dev/faq.html</loc>
-    <lastmod>2026-09-15</lastmod>
+    <loc>https://anamsdentalclinic.pages.dev/treatments/cosmetic-dentistry</loc>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://anamsdentalclinic.pages.dev/specialisations</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://anamsdentalclinic.pages.dev/specialisations/dental-implants</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://anamsdentalclinic.pages.dev/specialisations/prosthodontics</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://anamsdentalclinic.pages.dev/specialisations/crowns-and-bridges</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://anamsdentalclinic.pages.dev/specialisations/advanced-restorative-dentistry</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://anamsdentalclinic.pages.dev/specialisations/full-mouth-rehabilitation</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://anamsdentalclinic.pages.dev/about</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://anamsdentalclinic.pages.dev/faq</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://anamsdentalclinic.pages.dev/locations/kompally</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

@@ -1,6 +1,6 @@
 # ==============================================================================
 # Cloudflare Pages / Workers Performance & Cache Directives
-# Dr. Chandra Sekar Anam Dental Suite
+# Dr. Anam's Dental
 # ==============================================================================
 
 # HTML Documents: Revalidate immediately so new deployments show instantly
@@ -29,3 +29,24 @@
   Cache-Control: public, max-age=86400
 /sitemap.xml
   Cache-Control: public, max-age=86400
+
+# New treatment pages
+/treatments/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+# AI and search files
+/llms.txt
+  Cache-Control: public, max-age=86400
+  Content-Type: text/plain; charset=utf-8
+
+# Internal files that should never appear in search results
+/AGENTS.md
+  X-Robots-Tag: noindex
+/index.backup.html
+  X-Robots-Tag: noindex
+/tools/*
+  X-Robots-Tag: noindex
+/GO-LIVE.md
+  X-Robots-Tag: noindex
+/Deploy%20out/*
+  X-Robots-Tag: noindex
