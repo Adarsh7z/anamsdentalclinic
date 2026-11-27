@@ -99,11 +99,11 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="acc-panel" id="p-about" role="region" aria-labelledby="t-about">
               <div class="acc-clip">
                 <div class="acc-body card">
-                  <a class="row row--overview stagger" href="${prefix}about.html">About Dr. Anam</a>
-                  <a class="row stagger" href="${prefix}about.html#about">Academic &amp; Clinical Leadership</a>
-                  <a class="row stagger" href="${prefix}about.html#why">Evidence-Based Care &amp; Longevity</a>
-                  <a class="row stagger" href="${prefix}about.html#experience">Sterile Suite &amp; Technology</a>
-                  <a class="row stagger" href="${prefix}about.html#philosophy">Patient Philosophy &amp; Pillars</a>
+                  <a class="row row--overview stagger" href="/about">About Dr. Anam</a>
+                  <a class="row stagger" href="/about#about">Academic &amp; Clinical Leadership</a>
+                  <a class="row stagger" href="/about#why">Evidence-Based Care &amp; Longevity</a>
+                  <a class="row stagger" href="/about#experience">Sterile Suite &amp; Technology</a>
+                  <a class="row stagger" href="/about#philosophy">Patient Philosophy &amp; Pillars</a>
                 </div>
               </div>
             </div>
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="acc-panel" id="p-specs" role="region" aria-labelledby="t-specs">
               <div class="acc-clip">
                 <div class="acc-body card">
-                  <a class="row row--overview stagger" href="${prefix}specialisations.html">All Specialisations</a>
+                  <a class="row row--overview stagger" href="/specialisations">All Specialisations</a>
 
                   <!-- Category 1: Dental Implants -->
                   <div class="acc-item acc-item--nested stagger">
@@ -129,11 +129,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="acc-panel" id="p-implants" role="region" aria-labelledby="t-implants">
                       <div class="acc-clip">
                         <div class="acc-body sublist">
-                          <a class="row row--overview stagger" href="${prefix}specialisations/dental-implants.html">Dental Implants Overview</a>
-                          <a class="row stagger" href="${prefix}specialisations/dental-implants.html#single-tooth">Single Tooth Implants</a>
-                          <a class="row stagger" href="${prefix}specialisations/dental-implants.html#all-on-4">All-on-4 &amp; All-on-6 Implants</a>
-                          <a class="row stagger" href="${prefix}specialisations/dental-implants.html#implant-prostheses">Custom Implant Prostheses</a>
-                          <a class="row stagger" href="${prefix}specialisations/dental-implants.html#cbct-planning">3D CBCT Surgical Planning</a>
+                          <a class="row row--overview stagger" href="/specialisations/dental-implants">Dental Implants Overview</a>
+                          <a class="row stagger" href="/specialisations/dental-implants#single-tooth">Single Tooth Implants</a>
+                          <a class="row stagger" href="/specialisations/dental-implants#all-on-4">All-on-4 &amp; All-on-6 Implants</a>
+                          <a class="row stagger" href="/specialisations/dental-implants#implant-prostheses">Custom Implant Prostheses</a>
+                          <a class="row stagger" href="/specialisations/dental-implants#cbct-planning">3D CBCT Surgical Planning</a>
                         </div>
                       </div>
                     </div>
@@ -148,11 +148,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="acc-panel" id="p-prostho" role="region" aria-labelledby="t-prostho">
                       <div class="acc-clip">
                         <div class="acc-body sublist">
-                          <a class="row row--overview stagger" href="${prefix}specialisations/prosthodontics.html">Prosthodontics Overview</a>
-                          <a class="row stagger" href="${prefix}specialisations/prosthodontics.html#crowns-bridges">Custom Crowns &amp; Bridges</a>
-                          <a class="row stagger" href="${prefix}specialisations/prosthodontics.html#dentures">Complete &amp; Partial Dentures</a>
-                          <a class="row stagger" href="${prefix}specialisations/prosthodontics.html#rehabilitation">Full Smile Rejuvenation</a>
-                          <a class="row stagger" href="${prefix}specialisations/prosthodontics.html#overdentures">Overdentures &amp; Attachments</a>
+                          <a class="row row--overview stagger" href="/specialisations/prosthodontics">Prosthodontics Overview</a>
+                          <a class="row stagger" href="/specialisations/prosthodontics#crowns-bridges">Custom Crowns &amp; Bridges</a>
+                          <a class="row stagger" href="/specialisations/prosthodontics#dentures">Complete &amp; Partial Dentures</a>
+                          <a class="row stagger" href="/specialisations/prosthodontics#rehabilitation">Full Smile Rejuvenation</a>
+                          <a class="row stagger" href="/specialisations/prosthodontics#overdentures">Overdentures &amp; Attachments</a>
                         </div>
                       </div>
                     </div>
@@ -167,11 +167,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="acc-panel" id="p-restorative" role="region" aria-labelledby="t-restorative">
                       <div class="acc-clip">
                         <div class="acc-body sublist">
-                          <a class="row row--overview stagger" href="${prefix}specialisations/advanced-restorative-dentistry.html">Advanced Restorative Overview</a>
-                          <a class="row stagger" href="${prefix}specialisations/advanced-restorative-dentistry.html#wear-erosion">Tooth Wear &amp; Acid Erosion</a>
-                          <a class="row stagger" href="${prefix}specialisations/advanced-restorative-dentistry.html#bite-correction">Complex Bite Correction</a>
-                          <a class="row stagger" href="${prefix}specialisations/advanced-restorative-dentistry.html#tmj-harmony">TMJ Harmony &amp; Equilibration</a>
-                          <a class="row stagger" href="${prefix}specialisations/advanced-restorative-dentistry.html#biomimetic-bonding">Biomimetic Enamel Preservation</a>
+                          <a class="row row--overview stagger" href="/specialisations/advanced-restorative-dentistry">Advanced Restorative Overview</a>
+                          <a class="row stagger" href="/specialisations/advanced-restorative-dentistry#wear-erosion">Tooth Wear &amp; Acid Erosion</a>
+                          <a class="row stagger" href="/specialisations/advanced-restorative-dentistry#bite-correction">Complex Bite Correction</a>
+                          <a class="row stagger" href="/specialisations/advanced-restorative-dentistry#tmj-harmony">TMJ Harmony &amp; Equilibration</a>
+                          <a class="row stagger" href="/specialisations/advanced-restorative-dentistry#biomimetic-bonding">Biomimetic Enamel Preservation</a>
                         </div>
                       </div>
                     </div>
@@ -186,11 +186,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="acc-panel" id="p-crowns" role="region" aria-labelledby="t-crowns">
                       <div class="acc-clip">
                         <div class="acc-body sublist">
-                          <a class="row row--overview stagger" href="${prefix}specialisations/crowns-and-bridges.html">Crowns &amp; Bridges Overview</a>
-                          <a class="row stagger" href="${prefix}specialisations/crowns-and-bridges.html#zirconia-emax">Monolithic Zirconia &amp; E-max</a>
-                          <a class="row stagger" href="${prefix}specialisations/crowns-and-bridges.html#precision-margins">Precision Microscopic Margins</a>
-                          <a class="row stagger" href="${prefix}specialisations/crowns-and-bridges.html#fixed-bridges">Fixed Bridgework Solutions</a>
-                          <a class="row stagger" href="${prefix}specialisations/crowns-and-bridges.html#shade-matching">Natural Aesthetic Shade Matching</a>
+                          <a class="row row--overview stagger" href="/specialisations/crowns-and-bridges">Crowns &amp; Bridges Overview</a>
+                          <a class="row stagger" href="/specialisations/crowns-and-bridges#zirconia-emax">Monolithic Zirconia &amp; E-max</a>
+                          <a class="row stagger" href="/specialisations/crowns-and-bridges#precision-margins">Precision Microscopic Margins</a>
+                          <a class="row stagger" href="/specialisations/crowns-and-bridges#fixed-bridges">Fixed Bridgework Solutions</a>
+                          <a class="row stagger" href="/specialisations/crowns-and-bridges#shade-matching">Natural Aesthetic Shade Matching</a>
                         </div>
                       </div>
                     </div>
@@ -205,11 +205,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="acc-panel" id="p-fullmouth" role="region" aria-labelledby="t-fullmouth">
                       <div class="acc-clip">
                         <div class="acc-body sublist">
-                          <a class="row row--overview stagger" href="${prefix}specialisations/full-mouth-rehabilitation.html">Full Mouth Rehab Overview</a>
-                          <a class="row stagger" href="${prefix}specialisations/full-mouth-rehabilitation.html#full-arch">Full Arch Reconstruction</a>
-                          <a class="row stagger" href="${prefix}specialisations/full-mouth-rehabilitation.html#collapsed-bite">Collapsed Bite Elevation</a>
-                          <a class="row stagger" href="${prefix}specialisations/full-mouth-rehabilitation.html#multidisciplinary">Multi-Stage Coordinated Care</a>
-                          <a class="row stagger" href="${prefix}specialisations/full-mouth-rehabilitation.html#occlusal-stability">Long-Term Occlusal Stability</a>
+                          <a class="row row--overview stagger" href="/specialisations/full-mouth-rehabilitation">Full Mouth Rehab Overview</a>
+                          <a class="row stagger" href="/specialisations/full-mouth-rehabilitation#full-arch">Full Arch Reconstruction</a>
+                          <a class="row stagger" href="/specialisations/full-mouth-rehabilitation#collapsed-bite">Collapsed Bite Elevation</a>
+                          <a class="row stagger" href="/specialisations/full-mouth-rehabilitation#multidisciplinary">Multi-Stage Coordinated Care</a>
+                          <a class="row stagger" href="/specialisations/full-mouth-rehabilitation#occlusal-stability">Long-Term Occlusal Stability</a>
                         </div>
                       </div>
                     </div>
@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
           <!-- 3. Locate Clinic (Plain link with NO chevron) -->
           <li>
-            <a class="pill" href="${prefix}index.html#contact">Locate Clinic</a>
+            <a class="pill" href="/#contact">Locate Clinic</a>
           </li>
         </ul>
       `;
@@ -557,28 +557,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const mm = gsap.matchMedia();
 
-      // Mode A: Desktop & Tablet (>= 768px), Landscape Phones
-      // Preserves original vertical/grid layout with elegant scroll entrance stagger
-      mm.add({
-        isDesktopOrTablet: "(min-width: 768px)",
-        isLandscape: "(orientation: landscape)"
-      }, (context) => {
-        const { isDesktopOrTablet, isLandscape } = context.conditions;
-        if (isDesktopOrTablet || isLandscape) {
-          gsap.from('.service-item', {
-            scrollTrigger: {
-              trigger: '.services-columns',
-              start: 'top 85%',
-              once: true
-            },
-            y: 30,
-            opacity: 0,
-            duration: 0.8,
-            ease: 'power2.out',
-            stagger: 0.1
-          });
-        }
-      });
+      // (Removed: the scroll-triggered fade-in on the specialisation cards. They are now
+      //  visible straight away, so nothing on the page waits for a scroll to appear.)
     }
 
     // 6. Mobile Clinical Specialisations: Premium Seamless Infinite-Loop Carousel

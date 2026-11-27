@@ -3,18 +3,21 @@
 
   // Config & Timings (tuneable)
   const WELCOME_ENABLED = true;
-  const INCLUDE_DR = false; // When false: "ANAM’S DENTAL CLINIC"; when true: "DR. ANAM’S DENTAL CLINIC"
+  const INCLUDE_DR = true; // Official name: "Dr. Anam’s Dental"
   const SKIP_FOR_SEARCH_REFERRALS = false;
-  const TIME_TEXT_ENTER = 0.40;
-  const TIME_TEXT_STAGGER = 0.07;
-  const TIME_HOLD_START = 0.61;
-  const TIME_TEXT_EXIT = 0.25;
-  const TIME_EXIT_STAGGER = 0.03;
-  const TIME_EXIT_START = 1.05;
-  const TIME_PANELS_PART = 0.80;
-  const TIME_PANELS_START = 1.20;
-  const TIME_EVENT_OPENING = 1.45;
-  const TIME_TOTAL_CLEANUP = 2.00;
+  // Shortened Nov 2026: about 1.6 s in total (was 2.0 s plus up to 0.6 s font wait).
+  // Same choreography (name rises, holds, curtains part), just tighter.
+  const TIME_TEXT_ENTER = 0.34;
+  const TIME_TEXT_STAGGER = 0.05;
+  const TIME_HOLD_START = 0.49;
+  const TIME_TEXT_EXIT = 0.20;
+  const TIME_EXIT_STAGGER = 0.025;
+  const TIME_EXIT_START = 0.85;
+  const TIME_PANELS_PART = 0.66;
+  const TIME_PANELS_START = 0.95;
+  const TIME_EVENT_OPENING = 1.10;
+  const TIME_TOTAL_CLEANUP = 1.62;
+  const FONT_WAIT_MS = 400;
   const HARD_TIMEOUT_MS = 5000;
 
   // 1. Skip Checks
@@ -75,7 +78,7 @@
       '</div>' +
       '<div class="welcome-mask"><span class="welcome-line welcome-eyebrow">Welcome to</span></div>' +
       '<div class="welcome-mask"><span class="welcome-line welcome-name">' + brandName + '</span></div>' +
-      '<div class="welcome-mask"><span class="welcome-line welcome-name">Dental Clinic</span></div>' +
+      '<div class="welcome-mask"><span class="welcome-line welcome-name">Dental</span></div>' +
     '</div>';
 
   const root = document.documentElement;
@@ -112,7 +115,7 @@
   // 4. Waiting & Timeline
   function waitForFont() {
     return (document.fonts && document.fonts.load)
-      ? Promise.race([document.fonts.load('500 1rem "Cormorant Garamond"'), new Promise((r) => setTimeout(r, 600))])
+      ? Promise.race([document.fonts.load('500 1rem "Cormorant Garamond"'), new Promise((r) => setTimeout(r, FONT_WAIT_MS))])
       : Promise.resolve();
   }
 
@@ -150,7 +153,7 @@
         .to(lines, { yPercent: -120, opacity: 0, duration: TIME_TEXT_EXIT, stagger: TIME_EXIT_STAGGER, ease: 'power2.in' }, TIME_EXIT_START)
         .to(pLeft, { xPercent: -101, duration: TIME_PANELS_PART, ease: 'power4.inOut' }, TIME_PANELS_START)
         .to(pRight, { xPercent: 101, duration: TIME_PANELS_PART, ease: 'power4.inOut' }, TIME_PANELS_START)
-        .to(shades, { opacity: 0, duration: 0.40, ease: 'power2.out' }, TIME_PANELS_START)
+        .to(shades, { opacity: 0, duration: 0.34, ease: 'power2.out' }, TIME_PANELS_START)
         .call(() => {
           try { window.dispatchEvent(new CustomEvent('welcome:opening')); } catch (e) {}
         }, null, TIME_EVENT_OPENING);
@@ -177,17 +180,17 @@
   function runFallback(lines, pLeft, pRight, shades) {
     try {
       const anim = (el, kf, opt) => el.animate(kf, Object.assign({ fill: 'forwards' }, opt));
-      lines.forEach((l, i) => anim(l, [{ transform: 'translate3d(0,120%,0)', opacity: 0 }, { transform: 'translate3d(0,0,0)', opacity: 1 }], { duration: 400, delay: i * 70, easing: 'cubic-bezier(.215,.61,.355,1)' }));
+      lines.forEach((l, i) => anim(l, [{ transform: 'translate3d(0,120%,0)', opacity: 0 }, { transform: 'translate3d(0,0,0)', opacity: 1 }], { duration: TIME_TEXT_ENTER * 1000, delay: i * TIME_TEXT_STAGGER * 1000, easing: 'cubic-bezier(.215,.61,.355,1)' }));
       setTimeout(() => {
-        lines.forEach((l, i) => anim(l, [{ transform: 'translate3d(0,0,0)', opacity: 1 }, { transform: 'translate3d(0,-120%,0)', opacity: 0 }], { duration: 250, delay: i * 30, easing: 'cubic-bezier(.55,.055,.675,.19)' }));
-      }, 1050);
+        lines.forEach((l, i) => anim(l, [{ transform: 'translate3d(0,0,0)', opacity: 1 }, { transform: 'translate3d(0,-120%,0)', opacity: 0 }], { duration: TIME_TEXT_EXIT * 1000, delay: i * TIME_EXIT_STAGGER * 1000, easing: 'cubic-bezier(.55,.055,.675,.19)' }));
+      }, TIME_EXIT_START * 1000);
       setTimeout(() => {
-        anim(pLeft, [{ transform: 'none' }, { transform: 'translate3d(-101%,0,0)' }], { duration: 800, easing: 'cubic-bezier(.77,0,.175,1)' });
-        anim(pRight, [{ transform: 'none' }, { transform: 'translate3d(101%,0,0)' }], { duration: 800, easing: 'cubic-bezier(.77,0,.175,1)' });
+        anim(pLeft, [{ transform: 'none' }, { transform: 'translate3d(-101%,0,0)' }], { duration: TIME_PANELS_PART * 1000, easing: 'cubic-bezier(.77,0,.175,1)' });
+        anim(pRight, [{ transform: 'none' }, { transform: 'translate3d(101%,0,0)' }], { duration: TIME_PANELS_PART * 1000, easing: 'cubic-bezier(.77,0,.175,1)' });
         shades.forEach(s => anim(s, [{ opacity: 1 }, { opacity: 0 }], { duration: 400 }));
-      }, 1200);
-      setTimeout(() => { try { window.dispatchEvent(new CustomEvent('welcome:opening')); } catch (e) {} }, 1450);
-      setTimeout(cleanup, 2000);
+      }, TIME_PANELS_START * 1000);
+      setTimeout(() => { try { window.dispatchEvent(new CustomEvent('welcome:opening')); } catch (e) {} }, TIME_EVENT_OPENING * 1000);
+      setTimeout(cleanup, TIME_TOTAL_CLEANUP * 1000);
     } catch (e) {
       cleanup();
     }

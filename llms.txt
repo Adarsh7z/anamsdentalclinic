@@ -1,0 +1,44 @@
+# Dr. Anam's Dental
+
+> Dr. Anam's Dental is a complete dental clinic for adults and children in Bolarum, Secunderabad (Hyderabad, Telangana, India), close to Kompally and Dulapally. It is led by Dr. Chandra Sekar Anam, MDS, a prosthodontist and implantologist and Professor of Prosthodontics, with specialist dentists for each branch of dentistry.
+
+## Clinic facts
+
+- Name: Dr. Anam's Dental
+- Address: 6th Floor (Unit 612), Fairmount Downtown Building, X Road, Doolapally Road, Sri Ganesh Nagar, Bolarum, Secunderabad, Hyderabad, Telangana 500100, India
+- Areas served: Bolarum, Kompally, Dulapally, Jeedimetla, Secunderabad and north Hyderabad
+- Phone: 040-27638169 (appointments are booked by phone)
+- Email: anamsdentalclinic@gmail.com
+- Hours: Monday to Saturday, 10:00 AM to 7:00 PM. Closed on Sunday.
+- Map: https://maps.app.goo.gl/sNM6msj4zvmMWUXy6
+- Equipment: 3D CBCT imaging, digital intraoral scanner, Class-B autoclave sterilisation, computerised occlusion (bite) analysis
+
+## Lead dentist
+
+- Dr. Chandra Sekar Anam, MDS (Prosthodontics), prosthodontist and implantologist, 30+ years of experience
+- Professor of Prosthodontics; former National Vice President of the Indian Prosthodontic Society (IPS)
+- Member of the Indian Prosthodontic Society, the Indian Dental Association and the American Academy of Implant Dentistry
+- Trained at Bapuji Dental College
+- Profile: https://anamsdentalclinic.pages.dev/about
+
+## Treatments
+
+- [All treatments](https://anamsdentalclinic.pages.dev/treatments): overview of every treatment offered
+- [Check-ups and fillings (general dentistry)](https://anamsdentalclinic.pages.dev/treatments/general-dentistry): examinations, tooth-coloured fillings, toothache and sensitivity
+- [Teeth cleaning and gum treatment](https://anamsdentalclinic.pages.dev/treatments/gum-treatment): scaling and polishing, deep cleaning, bleeding gums, gum disease
+- [Kids' dentistry (paediatric dentistry)](https://anamsdentalclinic.pages.dev/treatments/kids-dentistry): check-ups, fluoride, sealants, fillings and baby-tooth treatment
+- [Root canal treatment](https://anamsdentalclinic.pages.dev/treatments/root-canal-treatment): saving infected or painful teeth, re-treatment
+- [Tooth extraction and wisdom teeth](https://anamsdentalclinic.pages.dev/treatments/tooth-extraction-wisdom-teeth): simple and surgical extractions, impacted wisdom teeth
+- [Braces and Invisalign clear aligners](https://anamsdentalclinic.pages.dev/treatments/braces-and-aligners): metal braces, ceramic braces, clear aligners, retainers
+- [Cosmetic dentistry](https://anamsdentalclinic.pages.dev/treatments/cosmetic-dentistry): teeth whitening, veneers, bonding, smile design
+- [Dental implants](https://anamsdentalclinic.pages.dev/specialisations/dental-implants): single-tooth implants and full-arch All-on-4 / All-on-6
+- [Prosthodontics](https://anamsdentalclinic.pages.dev/specialisations/prosthodontics): dentures and replacement of missing teeth
+- [Crowns and bridges](https://anamsdentalclinic.pages.dev/specialisations/crowns-and-bridges)
+- [Advanced restorative dentistry](https://anamsdentalclinic.pages.dev/specialisations/advanced-restorative-dentistry)
+- [Full mouth rehabilitation](https://anamsdentalclinic.pages.dev/specialisations/full-mouth-rehabilitation)
+
+## More
+
+- [Patient FAQs](https://anamsdentalclinic.pages.dev/faq)
+- [Dentist near Kompally](https://anamsdentalclinic.pages.dev/locations/kompally)
+- The clinic does not publish treatment prices online; costs are explained at the consultation.

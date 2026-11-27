@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page not found | Dr. Anam's Dental</title>
+  <meta name="description" content="This page does not exist. Find Dr. Anam's Dental specialisations, the clinic location and contact details here.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#11100C">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+  <!-- Performance Resource Hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="dns-prefetch" href="https://maps.app.goo.gl">
+  
+  <!-- Master Fonts: Cormorant Garamond & DM Sans -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
+
+  <!-- Iconify Icons (Deferred) -->
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js" defer></script>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/index.css?v=6">
+</head>
+<body class="subpage faq-page">
+
+  <!-- ==================== ALWAYS-VISIBLE FLOATING CALL WIDGET (BOTTOM-RIGHT) ==================== -->
+  <div class="floating-call-widget">
+    <a href="tel:04027638169" class="floating-call-btn" title="Call Clinic Directly" aria-label="Call the clinic">
+      <iconify-icon icon="lucide:phone-call"></iconify-icon>
+      <span>Call Now: 040-27638169</span>
+    </a>
+  </div>
+
+  <!-- ==================== ALWAYS-VISIBLE FLOATING LOCATION WIDGET (BOTTOM-LEFT) ==================== -->
+  <div class="floating-location-widget">
+    <a href="https://maps.app.goo.gl/sNM6msj4zvmMWUXy6" target="_blank" rel="noopener noreferrer" class="floating-location-btn" title="Open Clinic Location in Google Maps" aria-label="Clinic Location — Open Google Maps">
+      <div class="location-pin-img">
+        <picture style="display:contents;">
+          <source srcset="/assets/google_maps_pin.webp" type="image/webp">
+          <img src="/assets/google_maps_pin.png" alt="Google Maps Pin Logo" width="44" height="44" decoding="async">
+        </picture>
+      </div>
+      <div class="location-btn-text">
+        <span class="location-title">Clinic Location</span>
+        <span class="location-subtitle">Google Maps</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- ==================== FLOATING RETURN TO HOME (TOP-LEFT MOBILE) ==================== -->
+  <div class="floating-back-widget">
+    <a href="/" class="floating-back-btn" title="Return to Home" aria-label="Return to Home">
+      <iconify-icon icon="lucide:arrow-left"></iconify-icon>
+      <span>Home</span>
+    </a>
+  </div>
+
+  <!-- ==================== FULL-SCREEN ESPRESSO OVERLAY MENU ==================== -->
+  <div class="landing-menu-overlay" id="landingMenuOverlay" aria-hidden="true" role="dialog" aria-label="Mobile Navigation Menu">
+    <div class="menu-overlay-header">
+      <a href="/" class="landing-brand">
+        <svg class="nav-tooth-icon" width="34" height="40" viewBox="0 0 38 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M19 5.5C14.5 3 7.5 5 7.5 13C7.5 19.5 9.5 25 11.5 31C13 35.5 15.5 38.5 17 38.5C18.5 38.5 18 31 19 28C20 31 19.5 38.5 21 38.5C22.5 38.5 25 35.5 26.5 31C28.5 25 30.5 19.5 30.5 13C30.5 5 23.5 3 19 5.5Z" stroke="#F3EFEC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13 14C15 16 17 16.8 19 16.8C21 16.8 23 16 25 14" stroke="#F3EFEC" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        <div class="brand-wordmark">
+          <span class="brand-line-1">Dr. Anam's Dental</span>
+          <span class="brand-line-2">Complete Dental Care</span>
+        </div>
+      </a>
+      <button class="menu-close-btn" id="menuCloseBtn" aria-label="Close Navigation Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+        <nav class="menu-overlay-nav">
+      <ul class="menu-overlay-list">
+        <li class="menu-overlay-item">
+          <button type="button" class="menu-overlay-acc-btn" id="menuAccAboutBtn" aria-expanded="false" aria-controls="menuAccAboutPanel">
+            <span>About Dr. Anam</span>
+            <svg class="menu-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="menu-overlay-acc-panel" id="menuAccAboutPanel" role="region" aria-labelledby="menuAccAboutBtn">
+            <div class="menu-overlay-acc-inner">
+              <ul class="menu-overlay-subnav">
+                <li><a href="/about">Doctor Profile</a></li>
+                <li><a href="/about#leadership">Leadership &amp; IPS</a></li>
+                <li><a href="/about#why">Evidence-Based Care</a></li>
+                <li><a href="/about#philosophy">Patient Philosophy</a></li>
+                <li><a href="/about#experience">Sterile Suite</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="menu-overlay-item">
+          <button type="button" class="menu-overlay-acc-btn" id="menuAccTreatBtn" aria-expanded="false" aria-controls="menuAccTreatPanel">
+            <span>Treatments</span>
+            <svg class="menu-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="menu-overlay-acc-panel" id="menuAccTreatPanel" role="region" aria-labelledby="menuAccTreatBtn">
+            <div class="menu-overlay-acc-inner">
+              <ul class="menu-overlay-subnav">
+                <li><a href="/treatments">All Treatments</a></li>
+                <li><a href="/treatments/general-dentistry">Check-ups &amp; Fillings</a></li>
+                <li><a href="/treatments/gum-treatment">Teeth Cleaning &amp; Gum Care</a></li>
+                <li><a href="/treatments/kids-dentistry">Kids' Dentistry</a></li>
+                <li><a href="/treatments/root-canal-treatment">Root Canal Treatment</a></li>
+                <li><a href="/treatments/tooth-extraction-wisdom-teeth">Extractions &amp; Wisdom Teeth</a></li>
+                <li><a href="/treatments/braces-and-aligners">Braces &amp; Invisalign</a></li>
+                <li><a href="/treatments/cosmetic-dentistry">Cosmetic Dentistry</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="menu-overlay-item">
+          <button type="button" class="menu-overlay-acc-btn" id="menuAccSpecBtn" aria-expanded="false" aria-controls="menuAccSpecPanel">
+            <span>Specialisations</span>
+            <svg class="menu-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="menu-overlay-acc-panel" id="menuAccSpecPanel" role="region" aria-labelledby="menuAccSpecBtn">
+            <div class="menu-overlay-acc-inner">
+              <ul class="menu-overlay-subnav">
+                <li><a href="/specialisations">All Specialisations</a></li>
+                <li><a href="/specialisations/dental-implants">Dental Implants (All-on-4/6)</a></li>
+                <li><a href="/specialisations/prosthodontics">Prosthodontics</a></li>
+                <li><a href="/specialisations/advanced-restorative-dentistry">Advanced Restorative</a></li>
+                <li><a href="/specialisations/crowns-and-bridges">Precision Crowns &amp; Bridges</a></li>
+                <li><a href="/specialisations/full-mouth-rehabilitation">Full Mouth Rehabilitation</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="menu-overlay-item">
+          <a href="/faq" class="menu-overlay-link">Patient FAQs</a>
+        </li>
+        <li class="menu-overlay-item">
+          <a href="/#contact" class="menu-overlay-link">Locate Clinic</a>
+        </li>
+      </ul>
+      <div class="menu-overlay-cta">
+        <a href="tel:04027638169" class="btn btn-gold" style="padding: 14px 28px; border-radius: 4px;">
+          <iconify-icon icon="lucide:phone-call"></iconify-icon> Call Now: 040-27638169
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ==================== NAVIGATION BAR (IVORY ADAPTED) ==================== -->
+  <header>
+    <nav class="landing-navbar navbar-ivory" id="navbar">
+      <!-- Left: Logo Lockup with Thin Line-Art Tooth Icon -->
+      <a href="/" class="landing-brand">
+        <svg class="nav-tooth-icon" width="38" height="44" viewBox="0 0 38 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M19 5.5C14.5 3 7.5 5 7.5 13C7.5 19.5 9.5 25 11.5 31C13 35.5 15.5 38.5 17 38.5C18.5 38.5 18 31 19 28C20 31 19.5 38.5 21 38.5C22.5 38.5 25 35.5 26.5 31C28.5 25 30.5 19.5 30.5 13C30.5 5 23.5 3 19 5.5Z" stroke="#2E2A27" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13 14C15 16 17 16.8 19 16.8C21 16.8 23 16 25 14" stroke="#2E2A27" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        <div class="brand-wordmark">
+          <span class="brand-line-1">Dr. Anam's Dental</span>
+          <span class="brand-line-2">Complete Dental Care</span>
+        </div>
+      </a>
+
+      <!-- Center: Navigation Links -->
+      <ul class="landing-nav-links">
+        <li><a href="/about">About Dr. Anam</a></li>
+        <li><a href="/treatments">Treatments</a></li>
+        <li><a href="/specialisations">Specialisations</a></li>
+        <li><a href="/faq">FAQs</a></li>
+        <li><a href="/#contact">Locate Clinic</a></li>
+      </ul>
+
+      <!-- Right: Outlined Call Button & Minimal Hamburger -->
+      <div class="landing-nav-actions">
+        <a href="tel:04027638169" class="nav-call-outlined">
+          Call Now: 040-27638169
+        </a>
+        <button class="landing-hamburger" id="landingHamburger" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="landingMenuOverlay">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==================== NOT FOUND ==================== -->
+  <main class="subpage-hero" style="padding-top: 160px; padding-bottom: 6rem; min-height: 72vh; display: flex; align-items: center;">
+    <div class="container" style="text-align: center;">
+      <div class="eyebrow-container" style="justify-content: center; margin-bottom: 1.25rem;">
+        <span class="services-eyebrow">ERROR 404</span>
+        <div class="eyebrow-hairline"></div>
+      </div>
+      <h1 class="hero-title" style="max-width: 760px; margin: 0 auto 1.25rem; font-family: var(--font-serif); font-weight: 500; font-size: clamp(2.2rem, 4.2vw, 3.4rem); color: var(--ink); line-height: 1.18;">
+        This page could not be found
+      </h1>
+      <p class="hero-subtitle" style="margin: 0 auto 2.2rem; max-width: 620px; font-family: var(--font-sans); color: var(--ink-soft); font-size: 1.05rem; line-height: 1.75;">
+        The link may be old or mistyped. You can head back to the home page, browse our specialisations, or call the clinic directly.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="/" class="btn btn-gold" style="padding: 14px 28px; border-radius: 4px; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase;">Go to Home Page</a>
+        <a href="/specialisations" class="btn btn-outline" style="padding: 14px 28px; border-radius: 4px; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase;">View Specialisations</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" style="background: var(--espresso); color: var(--ivory); padding: 64px 0 32px; border-top: 1px solid rgba(243, 239, 236, 0.08);">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/" class="landing-brand" style="margin-bottom:1.2rem; text-decoration:none; display:inline-flex;">
+            <svg class="nav-tooth-icon" width="34" height="40" viewBox="0 0 38 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M19 5.5C14.5 3 7.5 5 7.5 13C7.5 19.5 9.5 25 11.5 31C13 35.5 15.5 38.5 17 38.5C18.5 38.5 18 31 19 28C20 31 19.5 38.5 21 38.5C22.5 38.5 25 35.5 26.5 31C28.5 25 30.5 19.5 30.5 13C30.5 5 23.5 3 19 5.5Z" stroke="#F3EFEC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M13 14C15 16 17 16.8 19 16.8C21 16.8 23 16 25 14" stroke="#F3EFEC" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+            <div class="brand-wordmark">
+              <span class="brand-line-1" style="color: var(--ivory);">Dr. Anam's Dental</span>
+              <span class="brand-line-2" style="color: rgba(243, 239, 236, 0.65);">MDS &bull; Prosthodontist &amp; Implantologist</span>
+            </div>
+          </a>
+          <p class="footer-desc" style="color: rgba(243, 239, 236, 0.75); font-size: 0.92rem; line-height: 1.65; margin-bottom: 1.5rem;">
+            Complete dental care for adults and children in Bolarum, Secunderabad, led by Dr. Chandra Sekar Anam, MDS, senior prosthodontist and implantologist, with specialist dentists for every branch of dentistry.
+          </p>
+          <div class="footer-doctor-card" style="background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(243, 239, 236, 0.1);">
+            <div class="footer-doctor-img">
+              <picture style="display:contents;">
+                <source srcset="/assets/dr_anam_actual.webp" type="image/webp">
+                <img src="/assets/dr_anam_actual.jpg" alt="Dr. Chandra Sekar Anam, MDS" width="60" height="60" loading="lazy">
+              </picture>
+            </div>
+            <div class="footer-doctor-info">
+              <h5 class="footer-doctor-name" style="color: var(--ivory); font-family: 'DM Sans', sans-serif; font-size: 1rem;">Dr. Chandra Sekar Anam, MDS</h5>
+              <span class="footer-doctor-role" style="color: var(--bronze); font-size: 0.75rem; letter-spacing: 0.1em;">PROSTHODONTIST &amp; IMPLANTOLOGIST</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 style="color: var(--ivory); font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.35rem; margin-bottom: 1.2rem;">Treatments</h4>
+          <ul class="footer-links">
+            <li><a href="/treatments" style="color: rgba(243, 239, 236, 0.75);">All Treatments</a></li>
+            <li><a href="/treatments/general-dentistry" style="color: rgba(243, 239, 236, 0.75);">Check-ups &amp; Fillings</a></li>
+            <li><a href="/treatments/gum-treatment" style="color: rgba(243, 239, 236, 0.75);">Teeth Cleaning &amp; Gum Care</a></li>
+            <li><a href="/treatments/kids-dentistry" style="color: rgba(243, 239, 236, 0.75);">Kids' Dentistry</a></li>
+            <li><a href="/treatments/root-canal-treatment" style="color: rgba(243, 239, 236, 0.75);">Root Canal Treatment</a></li>
+            <li><a href="/treatments/tooth-extraction-wisdom-teeth" style="color: rgba(243, 239, 236, 0.75);">Extractions &amp; Wisdom Teeth</a></li>
+            <li><a href="/treatments/braces-and-aligners" style="color: rgba(243, 239, 236, 0.75);">Braces &amp; Invisalign</a></li>
+            <li><a href="/treatments/cosmetic-dentistry" style="color: rgba(243, 239, 236, 0.75);">Cosmetic Dentistry</a></li>
+            <li><a href="/specialisations/dental-implants" style="color: rgba(243, 239, 236, 0.75);">Dental Implants</a></li>
+            <li><a href="/specialisations" style="color: rgba(243, 239, 236, 0.75);">Dr. Anam's Specialisations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 style="color: var(--ivory); font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.35rem; margin-bottom: 1.2rem;">Academic &amp; Trust</h4>
+          <ul class="footer-links">
+            <li><a href="/about" style="color: rgba(243, 239, 236, 0.75);">Doctor Profile</a></li>
+            <li><a href="/locations/kompally" style="color: rgba(243, 239, 236, 0.75);">Kompally Clinic Guide</a></li>
+            <li><a href="/faq" style="color: rgba(243, 239, 236, 0.75);">Patient FAQs</a></li>
+            <li><a href="/about#leadership" style="color: rgba(243, 239, 236, 0.75);">Leadership &amp; IPS</a></li>
+            <li><a href="/about#why" style="color: rgba(243, 239, 236, 0.75);">Evidence-Based Care</a></li>
+            <li><a href="/about#philosophy" style="color: rgba(243, 239, 236, 0.75);">Patient Philosophy</a></li>
+            <li><a href="/about#experience" style="color: rgba(243, 239, 236, 0.75);">Sterile Suite</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 style="color: var(--ivory); font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.35rem; margin-bottom: 1.2rem;">Clinic Suite</h4>
+          <p style="font-size:0.95rem; margin-bottom:0.8rem; line-height:1.6; color: rgba(243, 239, 236, 0.75);">
+            6th Floor (Unit - 612) , Fairmount Downtown Building,<br>
+            X Road, Doolapally Rd, Sri Ganesh Nagar,<br>
+            Bolarum, Secunderabad, Hyderabad,<br>
+            Telangana 500100
+          </p>
+          <p style="font-size:0.95rem; line-height:1.6; color: rgba(243, 239, 236, 0.75);">
+            <strong>Phone:</strong> <a href="tel:04027638169" style="color:var(--bronze); text-decoration:none;">040-27638169</a><br>
+            <strong>Hours:</strong> Mon–Sat: 10:00 AM – 7:00 PM<br><strong>Sunday:</strong> Closed
+          </p>
+        </div>
+      </div>
+
+      <div style="padding-top:2rem; border-top:1px solid rgba(243, 239, 236, 0.12); text-align:center; color:rgba(243, 239, 236, 0.6); font-size:0.88rem; margin-top: 2rem;">
+        © 2026 Dr. Anam's Dental. All rights reserved.<br><span style=\"opacity:0.8; font-size:0.82rem;\">Website by <a href="https://3dwebsite.anamadarshreddy.workers.dev/" target="_blank" rel="noopener noreferrer" style="color:var(--bronze); text-decoration:underline; font-weight: 500;">Adarsh Reddy</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Master Scripts -->
+  <script src="/script.js?v=4"></script>
+</body>
+</html>

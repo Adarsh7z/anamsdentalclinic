@@ -1,3 +1,48 @@
+# robots.txt for Dr. Anam's Dental
+# Every page on this site is public. Search engines and AI assistants
+# are welcome to read it so they can describe the clinic accurately.
+
+# Search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# AI search and answer engines (these let the clinic appear in AI answers)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# AI model crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Everyone else
 User-agent: *
 Allow: /
-Sitemap: https://dr-anams-dental-clinic.anamadarshreddy.workers.dev/sitemap.xml
+
+Sitemap: https://anamsdentalclinic.pages.dev/sitemap.xml
